@@ -1,0 +1,8 @@
+yum update
+yum install git
+mkdir main
+cd main
+git clone https://github.com/3l4l5/notice.git
+yum install python3
+yum install -y https://repo.ius.io/ius-release-el7.rpm
+pip install requests

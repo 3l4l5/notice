@@ -1,3 +1,3 @@
 #!/bin/sh
 cd script
-python main.py
+python3 main.py
