@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from notify import send_message
 
 
