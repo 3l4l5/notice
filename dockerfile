@@ -14,4 +14,5 @@ RUN yum install cronie -y
 WORKDIR ~/../main
 RUN git clone https://github.com/3l4l5/notice.git
 
-RUN echo "* * * * * cd ~/../main/notice; sh main.sh" >> /var/spool/cron/root
+RUN echo "0 10 * * * cd ~/../main/notice; sh main.sh" >> /var/spool/cron/root
+RUN echo "0 18 * * * cd ~/../main/notice; sh main.sh" >> /var/spool/cron/root
