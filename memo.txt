@@ -6,9 +6,15 @@ git clone https://github.com/3l4l5/notice.git
 yum install python3
 yum install -y https://repo.ius.io/ius-release-el7.rpm
 pip install requests
+RUN echo "* * * * * cd ~/../main/notice; sh main.sh" >> /var/spool/cron/root
 
--e TZ=Asia/Tokyo
-docker run --privileged -d -p 80:80 -e TZ=Asia/Tokyo --name httpd1 mycentos /sbin/init
-docker exec -it 10cc626a79d8 bin/bash
+
+docker run --privileged -d -p 80:80 -e TZ=Asia/Tokyo --name <name> <image_name> /sbin/init
+docker exec -it <container_id> /bin/bash
+
+RUN systemctl start crond
+RUN systemctl enable crond
 
 * * * * * cd ~/../main/notice; sh main.sh
+
+echo "* * * * * cd ~/../main/notice; sh main.sh" >> /var/spool/cron/root
