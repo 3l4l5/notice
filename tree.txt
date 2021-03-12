@@ -1,0 +1,16 @@
+.
+├── README.md
+├── dockerfile
+├── main.sh
+├── memo.txt
+├── script
+│   ├── __pycache__
+│   │   └── notify.cpython-38.pyc
+│   ├── main.py
+│   └── notify.py
+├── token
+│   ├── a.txt
+│   └── token.txt
+└── tree.txt
+
+3 directories, 10 files

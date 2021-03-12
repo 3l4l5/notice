@@ -18,3 +18,6 @@ RUN systemctl enable crond
 * * * * * cd ~/../main/notice; sh main.sh
 
 echo "* * * * * cd ~/../main/notice; sh main.sh" >> /var/spool/cron/root
+
+本番token
+zAuhvgPvgw2vMqGHasImpyIEawAEE75ksmDQftJa0JP
